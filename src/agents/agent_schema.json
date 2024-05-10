@@ -1,0 +1,17 @@
+{
+    "provider": "groq",
+    "tags": ["llama3-8b"],
+    "llm_config": {
+        "config_list": api_config, 
+        "seed": 42, 
+        "temperature": 0, 
+        "request_timeout": 120, 
+        "use_cache": true 
+    },
+    "code_execution_config":{
+        "last_n_messages": 2, 
+        "work_dir": "devshop", 
+        "use_docker": "boolean"
+    },
+    "system_message": "string"
+}
